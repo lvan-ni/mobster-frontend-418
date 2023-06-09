@@ -13,19 +13,35 @@
       <h1>Welcome to MOBSTER </h1>
     </header>
     <main>
+
+      <div class="add-container">
+
+        <form class="add-member">
+          <input type="text" id="addMemberInput" placeholder="add here">
+          <button onclick="submitForm(event)">Add Member</button>
+        </form>
+        <form class="add-mob">
+          <input type="text" id="addMobInput" placeholder="add here">
+          <button onclick="sumbitForm(event)">Add Mob</button>
+        </form>
+
+      </div>
+
       <div class="mob-container">
         <a class="mobNames" id="1" >418</a>
         <a class="mobNames" id="2" >TBD</a>
         <a class="mobNames" id="3" >LOGA</a>
         <a class="mobNames" id="4" >JAR</a>
-        <section id="mobDisplay"></section>
+
+        <section id="nameCards">
+          <span id="nameCard1"></span>
+          <span id="nameCard2"></span>
+          <span id="nameCard3"></span>
+          <span id="nameCard4"></span>
+        </section>
+
       </div>
-      <form class="add-container">
-          <input type="text">
-          <input type="text">
-        <a href="">Add Member</a>
-        <a href="">Add Mob</a>
-      </form>
+
     </main>
   </body>
 </html>
