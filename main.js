@@ -12,7 +12,6 @@ const getMobNames = async event => {
   const mob = await response.json();
   const mobMembers = mob;
   const name = mobMembers.map(m => m.memberName);
-//  console.log(mob);
 
 
   const card1 = document.getElementById('nameCard1');
@@ -20,6 +19,7 @@ const getMobNames = async event => {
   const card3 = document.getElementById('nameCard3');
   const card4 = document.getElementById('nameCard4');
 
+  
   card1.innerText = name[0];
   card2.innerText = name[1];
   card3.innerText = name[2];
